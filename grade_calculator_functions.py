@@ -9,7 +9,6 @@ def get_student_score(score):
         return "D"
     else:
         return "F"
-
 try:
     score = int(input("Enter your score (50-100): "))
     if 0 <= score <= 100:
