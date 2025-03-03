@@ -1,19 +1,18 @@
 def get_student_score(score):
     if score >= 90:
-     return "A"
+        return "A"
     elif score >= 80:
-     return "B"
+        return "B"
     elif score >= 70:
-     return "C"
+        return "C"
     elif score >= 60:
-     return "D"
+        return "D"
     else:
-     return "F"
-try:
-    score = int(input("Enter your score (0-100): "))
-    if 0 <= score <= 100:
-        print(f"Your grade is: {get_student_score(score)}")
-    else:
-        print("Please enter a valid score between 0 and 100.")
-except ValueError:
-    print("Invalid input! Please enter an integer.")
+        return "F"
+
+# Replace the input() with a predefined value for testing
+score = 85  # Example score for testing
+if 0 <= score <= 100:
+    print(f"Your grade is: {get_student_score(score)}")
+else:
+    print("Please enter a valid score between 0 and 100.")
