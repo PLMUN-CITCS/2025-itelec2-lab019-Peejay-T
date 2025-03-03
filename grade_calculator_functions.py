@@ -10,7 +10,7 @@ def get_student_score(score):
     else:
         return "F"
 try:
-    score = int(input("Enter your score (50-100): "))
+    score = int(input("Enter your score (0-100): "))
     if 0 <= score <= 100:
         print(f"Your grade is: {get_student_score(score)}")
     else:
